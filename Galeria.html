@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sports Cars | Galería</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header id="Volver" class="header">
+    <nav class="nav container">
+      <a class="brand" href="Practica.html" aria-label="Inicio">
+        <img src="Ferrari-Logo.svg.png" alt="Logo" />
+      </a>
+
+      <!-- Toggle CSS-only -->
+      <input class="nav__check" type="checkbox" id="navcheck" />
+      <label class="nav__toggle" for="navcheck" aria-label="Abrir menú">☰</label>
+
+      <div class="nav__links">
+        <a href="Galeria.html">Sports Cars</a>
+        <a href="Racing.html">Racing</a>
+        <a href="#">Colecciones</a>
+        <a href="#">Experiencias</a>
+        <a href="#">Sobre nosotros</a>
+      </div>
+
+      <div class="nav__actions">
+        <a class="btn btn--ghost" href="Practica.html#news">News</a>
+        <a class="btn btn--primary" href="Practica.html#boletin">Boletín</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO simple (sin JS) -->
+    <section class="section container">
+      <div class="section__head">
+        <div>
+          <h1 style="margin:0; font-size: clamp(30px, 4vw, 44px);">Sports Cars</h1>
+          <p class="muted" style="margin-top:8px;">Todos los modelos</p>
+        </div>
+        <a class="btn btn--ghost" href="#modelos">Ver modelos</a>
+      </div>
+
+      <div class="panel" style="padding:16px;">
+        <p class="muted" style="margin:0;">
+          Esta página funciona como galería: tarjetas con imagen, categoría y acceso a “Modelo”.
+        </p>
+      </div>
+    </section>
+
+    <!-- MODELOS -->
+    <section id="modelos" class="section container">
+      <div class="section__head">
+        <h2>Gama</h2>
+        <p>Selección de deportivos con tarjetas y CTA.</p>
+      </div>
+
+      <div class="news-grid">
+        <!-- 296 GTB -->
+        <article class="card card--media">
+          <img src="prueba-ferrari-296-gtb.jpg" alt="296 GTB" />
+          <div class="card__body">
+            <span class="tag">Gama</span>
+            <h3>296 GTB</h3>
+            <p>Modelo deportivo con enfoque en rendimiento y diseño.</p>
+            <a class="btn btn--primary" href="#">Ver modelo</a>
+          </div>
+        </article>
+
+        <!-- 12Cilindri -->
+        <article class="card card--media">
+          <img src="Ferrari_12Cilindri_at_Maranello.jpg" alt="Ferrari 12Cilindri" />
+          <div class="card__body">
+            <span class="tag">Gama</span>
+            <h3>Ferrari 12Cilindri</h3>
+            <p>Inspiración clásica con presencia y potencia.</p>
+            <a class="btn btn--primary" href="#">Ver modelo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SERIE ESPECIAL -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section__head section__head--dark">
+          <h2>Serie Especial</h2>
+          <p>Ediciones especiales con foco en exclusividad.</p>
+        </div>
+
+        <div class="grid-2">
+          <!-- 812 Competizione -->
+          <article class="card card--media">
+            <img src="ferrari-812-competizione-2339-1.jpg" alt="812 Competizione" />
+            <div class="card__body">
+              <span class="tag">Serie Especial</span>
+              <h3>812 Competizione</h3>
+              <p>Versión especial con carácter competitivo.</p>
+              <a class="btn btn--primary" href="Ferrari 812 Competizione.docx">Leer más</a>
+            </div>
+          </article>
+
+          <!-- 812 Competizione A -->
+          <article class="card card--media">
+            <img src="Ferrari_812_Competizione_02.jpg" alt="812 Competizione A" />
+            <div class="card__body">
+              <span class="tag">Serie Especial</span>
+              <h3>812 Competizione A</h3>
+              <p>Variante con estética distinta y enfoque de colección.</p>
+              <a class="btn btn--primary" href="#">Leer más</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__grid">
+        <ul class="footer__links">
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+
+        <p class="footer__copy">&copy; 2025. Demo educativa. Todos los derechos reservados.</p>
+
+        <a class="backtop" href="#Volver">Volver arriba ↑</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

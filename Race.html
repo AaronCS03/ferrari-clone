@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ferrari | Formula 1 · Race Calendar</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- HEADER (MISMO QUE RACING) -->
+  <header id="Inicio" class="header">
+    <nav class="nav container">
+      <a class="brand" href="Practica.html" aria-label="Inicio">
+        <img src="Ferrari-Logo.svg.png" alt="Logo" width="500px" />
+      </a>
+
+      <!-- Toggle CSS-only -->
+      <input class="nav__check" type="checkbox" id="navcheck" />
+      <label class="nav__toggle" for="navcheck" aria-label="Abrir menú">☰</label>
+
+      <div class="nav__links">
+        <a href="Galeria.html">Sports Cars</a>
+        <a href="Racing.html">Racing</a>
+        <a href="#">Colecciones</a>
+        <a href="#">Experiencias</a>
+        <a href="#">Sobre nosotros</a>
+      </div>
+
+      <div class="nav__actions">
+        <a class="btn btn--ghost" href="#noticias">Noticias</a>
+        <a class="btn btn--primary" href="#boletin">Boletín</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO (IMAGEN PRINCIPAL DE CALENDAR) -->
+  <section class="hero">
+    <img class="hero__img" src="Ferrari-Logo.png" alt="Race Calendar" />
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content container">
+      <p class="kicker">Scuderia Ferrari</p>
+      <h1>Race Calendar</h1>
+      <p class="lead">Calendario de carreras de la temporada</p>
+
+    </div>
+  </section>
+
+  <main>
+    <!-- CONTROLES (SOLO UI) -->
+    <section class="section container" id="calendario">
+      <div class="section__head">
+        <h2>Calendario</h2>
+        <p>Vista en tarjetas con estado (próxima/completada) y fecha.</p>
+      </div>
+
+      <div class="panel" style="display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between;">
+        <div style="display:flex; flex-wrap:wrap; gap:10px;">
+          <a class="btn btn--ghost" href="#upcoming">Próximas</a>
+          <a class="btn btn--ghost" href="#completed">Completadas</a>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
+          <span class="tag">Season</span>
+          <span class="tag">F1</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTACADA -->
+    <section class="section section--dark" id="featured">
+      <div class="container">
+        <div class="section__head section__head--dark">
+          <h2>Carrera destacada</h2>
+          <p>Bloque principal tipo editorial, conectado al módulo Racing.</p>
+        </div>
+
+        <article class="news-hero">
+          <div class="news-hero__media">
+            <img src="skysports-f1-carlos-sainz-ferrari_6285763.jpg" alt="Carrera destacada" />
+          </div>
+
+          <div class="news-hero__body">
+            <p class="meta">Round · Weekend</p>
+            <h3>Singapore Grand Prix</h3>
+            <p class="muted">
+              Resumen previo del fin de semana: características del circuito, claves de estrategia y horario.
+            </p>
+
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <span class="tag">Night Race</span>
+              <span class="tag">Street Circuit</span>
+              <span class="tag">Upcoming</span>
+            </div>
+
+            <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="btn btn--primary" href="#">Ver detalles</a>
+              <a class="btn btn--ghost" href="#upcoming">Ver próximas</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PRÓXIMAS CARRERAS -->
+    <section class="section container" id="upcoming">
+      <div class="section__head">
+        <h2>Próximas carreras</h2>
+        <p>Tarjetas preparadas para que agregues o edites fechas.</p>
+      </div>
+
+      <div class="news-grid">
+        <article class="news-card">
+          <p class="meta">Upcoming</p>
+          <h4>Japan GP</h4>
+          <p class="muted">Suzuka · 05 Oct 2025</p>
+          <p class="muted">Prácticas, clasificación y carrera.</p>
+          <a class="link" href="#">Ver →</a>
+        </article>
+
+        <article class="news-card">
+          <p class="meta">Upcoming</p>
+          <h4>Qatar GP</h4>
+          <p class="muted">Lusail · 12 Oct 2025</p>
+          <p class="muted">Fin de semana completo.</p>
+          <a class="link" href="#">Ver →</a>
+        </article>
+
+        <article class="news-card">
+          <p class="meta">Upcoming</p>
+          <h4>United States GP</h4>
+          <p class="muted">Austin · 19 Oct 2025</p>
+          <p class="muted">Evento clave para puntos.</p>
+          <a class="link" href="#">Ver →</a>
+        </article>
+
+        <article class="news-card">
+          <p class="meta">Upcoming</p>
+          <h4>Mexico GP</h4>
+          <p class="muted">CDMX · 26 Oct 2025</p>
+          <p class="muted">Altitud y estrategia.</p>
+          <a class="link" href="#">Ver →</a>
+        </article>
+
+        <article class="news-card">
+          <p class="meta">Upcoming</p>
+          <h4>Brazil GP</h4>
+          <p class="muted">Interlagos · 02 Nov 2025</p>
+          <p class="muted">Carrera impredecible.</p>
+          <a class="link" href="#">Ver →</a>
+        </article>
+
+        <article class="news-card">
+          <p class="meta">Upcoming</p>
+          <h4>Abu Dhabi GP</h4>
+          <p class="muted">Yas Marina · 09 Nov 2025</p>
+          <p class="muted">Cierre de temporada.</p>
+          <a class="link" href="#">Ver →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CARRERAS COMPLETADAS -->
+    <section class="section container" id="completed">
+      <div class="section__head">
+        <h2>Carreras completadas</h2>
+        <p>Archivo de carreras ya disputadas.</p>
+      </div>
+
+      <div class="news-grid">
+        <article class="news-card">
+          <p class="meta">Completed</p>
+          <h4>Monaco GP</h4>
+          <p class="muted">Monte Carlo · 25 May 2025</p>
+          <p class="muted">Resultado y notas principales.</p>
+          <a class="link" href="#">Ver →</a>
+        </article>
+
+        <article class="news-card">
+          <p class="meta">Completed</p>
+          <h4>British GP</h4>
+          <p class="muted">Silverstone · 06 Jul 2025</p>
+          <p class="muted">Resumen del fin de semana.</p>
+          <a class="link" href="#">Ver →</a>
+        </article>
+
+        <article class="news-card">
+          <p class="meta">Completed</p>
+          <h4>Italian GP</h4>
+          <p class="muted">Monza · 07 Sep 2025</p>
+          <p class="muted">Carrera de casa.</p>
+          <a class="link" href="#">Ver →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__grid">
+        <ul class="footer__links">
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+
+        <p class="footer__copy">&copy; 2025. Proyecto académico. Demo educativa.</p>
+        <a class="backtop" href="#Inicio">Volver arriba ↑</a>
+      </div>
+    </footer>
+
+  </main>
+</body>
+</html>

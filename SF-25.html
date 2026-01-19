@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ferrari | Formula 1 · SF-25</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- HEADER (MISMO QUE RACING) -->
+  <header id="Inicio" class="header">
+    <nav class="nav container">
+      <a class="brand" href="Practica.html" aria-label="Inicio">
+        <img src="Ferrari-Logo.svg.png" alt="Logo" />
+      </a>
+
+      <!-- Toggle CSS-only -->
+      <input class="nav__check" type="checkbox" id="navcheck" />
+      <label class="nav__toggle" for="navcheck" aria-label="Abrir menú">☰</label>
+
+      <div class="nav__links">
+        <a href="Galeria.html">Sports Cars</a>
+        <a href="Racing.html">Racing</a>
+        <a href="#">Colecciones</a>
+        <a href="#">Experiencias</a>
+        <a href="#">Sobre nosotros</a>
+      </div>
+
+      <div class="nav__actions">
+        <a class="btn btn--ghost" href="#noticias">Noticias</a>
+        <a class="btn btn--primary" href="#boletin">Boletín</a>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <!-- IMAGEN PRINCIPAL DEL COCHE -->
+    <img class="hero__img" src="img/sf25-hero.jpg" alt="Ferrari SF-25" />
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content container">
+      <p class="kicker">Scuderia Ferrari</p>
+      <h1>SF-25</h1>
+      <p class="lead">
+        Página del monoplaza: enfoque en diseño, rendimiento y componentes (maqueta educativa).
+      </p>
+
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#overview">Ver overview</a>
+        <a class="btn btn--ghost" href="Racing.html">Volver a Racing</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- OVERVIEW -->
+    <section id="overview" class="section container">
+      <div class="section__head">
+        <h2>Overview</h2>
+        <p>Resumen del coche, concepto y objetivos de temporada.</p>
+      </div>
+
+      <div class="panel">
+        <p class="muted" style="margin:0;">
+          El SF-25 representa un enfoque equilibrado: eficiencia aerodinámica, estabilidad en curvas y gestión de neumáticos.
+          Sustituye este texto por tu investigación o un párrafo propio (sin copiar contenido oficial).
+        </p>
+      </div>
+    </section>
+
+    <!-- SPECS (TARJETAS) -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section__head section__head--dark">
+          <h2>Specs</h2>
+          <p>Características técnicas en formato de tarjetas (ideal para evaluación).</p>
+        </div>
+
+        <div class="news-grid">
+          <article class="news-card">
+            <p class="meta">Chassis</p>
+            <h4>Monocasco</h4>
+            <p class="muted">Estructura de seguridad y rigidez. Describe material y enfoque.</p>
+            <a class="link" href="#">Leer →</a>
+          </article>
+
+          <article class="news-card">
+            <p class="meta">Aerodynamics</p>
+            <h4>Paquete aero</h4>
+            <p class="muted">Carga, eficiencia y balance. Menciona alerones/suelo/difusor.</p>
+            <a class="link" href="#">Leer →</a>
+          </article>
+
+          <article class="news-card">
+            <p class="meta">Power Unit</p>
+            <h4>Unidad de potencia</h4>
+            <p class="muted">Motor + híbrido. Enfatiza eficiencia y entrega de potencia.</p>
+            <a class="link" href="#">Leer →</a>
+          </article>
+
+          <article class="news-card">
+            <p class="meta">Suspension</p>
+            <h4>Suspensión</h4>
+            <p class="muted">Geometría para estabilidad y cuidado de neumáticos.</p>
+            <a class="link" href="#">Leer →</a>
+          </article>
+
+          <article class="news-card">
+            <p class="meta">Tyres</p>
+            <h4>Gestión de neumáticos</h4>
+            <p class="muted">Temperatura, desgaste y rendimiento en stints largos.</p>
+            <a class="link" href="#">Leer →</a>
+          </article>
+
+          <article class="news-card">
+            <p class="meta">Strategy</p>
+            <h4>Enfoque de carrera</h4>
+            <p class="muted">Paradas, ritmo, undercut/overcut y ventanas de pit.</p>
+            <a class="link" href="#">Leer →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETALLES VISUALES -->
+    <section class="section container">
+      <div class="section__head">
+        <h2>Detalles del diseño</h2>
+        <p>Galería tipo editorial: piezas clave del monoplaza (con imágenes tuyas).</p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card card--media">
+          <img src="img/sf25-detail-1.jpg" alt="SF-25 detalle 1" />
+          <div class="card__body">
+            <span class="tag">Aero</span>
+            <h3>Front Wing</h3>
+            <p>Explica la función: carga delantera y equilibrio en curvas.</p>
+            <a class="link" href="#">Leer →</a>
+          </div>
+        </article>
+
+        <article class="card card--media">
+          <img src="img/sf25-detail-2.jpg" alt="SF-25 detalle 2" />
+          <div class="card__body">
+            <span class="tag">Chassis</span>
+            <h3>Sidepods & Cooling</h3>
+            <p>Entrada de aire, refrigeración y flujo hacia la parte trasera.</p>
+            <a class="link" href="#">Leer →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA A LAS OTRAS PÁGINAS (CONECTADO A RACING) -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section__head section__head--dark">
+          <h2>Explorar Fórmula 1</h2>
+          <p>Accesos conectados a Racing (módulo F1).</p>
+        </div>
+
+        <div class="news-grid">
+          <a href="Racing.html" class="news-card" style="text-decoration:none; color:inherit;">
+            <p class="meta">Racing</p>
+            <h4>Home</h4>
+            <p class="muted">Noticias y destacados del mundo Racing.</p>
+            <span class="link">Entrar →</span>
+          </a>
+
+          <a href="Race.html" class="news-card" style="text-decoration:none; color:inherit;">
+            <p class="meta">Race</p>
+            <h4>Race Calendar</h4>
+            <p class="muted">Fechas y sedes del calendario de la temporada.</p>
+            <span class="link">Entrar →</span>
+          </a>
+
+          <a href="Historia.html" class="news-card" style="text-decoration:none; color:inherit;">
+            <p class="meta">Historia</p>
+            <h4>Historia F1</h4>
+            <p class="muted">Timeline, hitos y momentos emblemáticos.</p>
+            <span class="link">Entrar →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__grid">
+        <ul class="footer__links">
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+
+        <p class="footer__copy">&copy; 2025. Proyecto académico. Demo educativa.</p>
+        <a class="backtop" href="#Inicio">Volver arriba ↑</a>
+      </div>
+    </footer>
+  </main>
+
+</body>
+</html>

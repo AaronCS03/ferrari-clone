@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ferrari República Dominicana | Noticias</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header id="Inicio" class="header">
+    <nav class="nav container">
+      <a class="brand" href="Practica.html" aria-label="Inicio">
+        <img src="Ferrari-Logo.svg.png" alt="Logo" />
+      </a>
+
+      <!-- Toggle CSS-only -->
+      <input class="nav__check" type="checkbox" id="navcheck" />
+      <label class="nav__toggle" for="navcheck" aria-label="Abrir menú">☰</label>
+
+      <div class="nav__links">
+        <a href="Galeria.html">Sports Cars</a>
+        <a href="Racing.html">Racing</a>
+        <a href="#">Colecciones</a>
+        <a href="#">Experiencias</a>
+        <a href="#">Sobre nosotros</a>
+      </div>
+
+      <div class="nav__actions">
+        <a class="btn btn--ghost" href="#noticias">Noticias</a>
+        <a class="btn btn--primary" href="#boletin">Boletín</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO / TITULAR -->
+    <section class="hero">
+      <img class="hero__img" src="FwkFY0DWAAApsgP-753x494.jpg" alt="Ferrari - Noticias" />
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content container">
+        <p class="kicker">Arranca el motor</p>
+        <h1>Noticias y novedades</h1>
+        <p class="lead">
+          Actualizaciones de carrera, historia y momentos destacados.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#noticias">Ver noticias</a>
+          <a class="btn btn--ghost" href="#boletin">Boletín</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTICIAS -->
+    <section id="noticias" class="section container">
+      <div class="section__head">
+        <h2>Últimas publicaciones</h2>
+        <p>Artículos principales en formato editorial con lectura cómoda.</p>
+      </div>
+
+      <!-- Noticia 1 (principal) -->
+      <article class="news-hero">
+        <div class="news-hero__media">
+          <img src="FwkFY0DWAAApsgP-753x494.jpg" alt="Tough race for Ferrari at Fuji" />
+        </div>
+
+        <div class="news-hero__body">
+          <p class="meta">Fuji · 28 September 2025</p>
+          <h3>Tough race for Ferrari at Fuji</h3>
+          <p class="muted">
+            The Fuji 6 Hours ended with the official Ferrari – AF Corse 499Ps in 11th and 15th place overall...
+            Ferrari remain leader in the World Manufacturers’ Championship.
+          </p>
+          <a class="btn btn--primary" href="#">Leer más</a>
+        </div>
+      </article>
+
+      <!-- Noticia 2 (secundaria) -->
+      <div class="news-grid" style="margin-top:14px;">
+        <article class="news-card">
+          <p class="meta">Historia · Special</p>
+          <h4>Tributo a las libreas de Lauda</h4>
+          <p class="muted">
+            Este año se cumple medio siglo desde que Niki Lauda ganó el título mundial de 1975 con Ferrari...
+          </p>
+          <a class="link" href="#">Leer →</a>
+        </article>
+
+        <article class="card card--media">
+          <img src="6470285a40c6810026987044.jpeg" alt="Tributo Lauda" />
+          <div class="card__body">
+            <span class="tag">Special</span>
+            <h3>312 T · 1975</h3>
+            <p>Un homenaje visual con enfoque editorial.</p>
+            <a class="btn btn--primary" href="#">Leer más</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <p class="meta">Racing · WEC</p>
+          <h4>Resumen y contexto</h4>
+          <p class="muted">
+            Bloque de apoyo para añadir futuras noticias sin romper el layout.
+          </p>
+          <a class="link" href="#">Leer →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- BOLETIN + LINKS -->
+    <section id="boletin" class="section container">
+      <div class="split">
+        <div class="panel">
+          <h2>Boletín informativo</h2>
+          <p class="muted">Suscríbete para recibir novedades (demo).</p>
+
+          <form class="form" action="#" method="post">
+            <div class="form__row">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" />
+            </div>
+
+            <div class="form__row">
+              <label for="email">Correo</label>
+              <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required />
+            </div>
+
+            <button class="btn btn--primary" type="submit">Suscribirme</button>
+          </form>
+        </div>
+
+        <aside class="panel panel--soft">
+          <h3>Enlaces</h3>
+
+          <div class="social">
+            <a class="social__item" href="https://www.instagram.com/ferrari/" target="_blank" rel="noopener">
+              <img src="insta-logo.png" alt="Instagram" />
+              <span>Instagram</span>
+            </a>
+
+            <a class="social__item" href="https://maps.app.goo.gl/8AtY93BK2XkoriWk7" target="_blank" rel="noopener">
+              <img src="gps-icon-logo-design-map-pointer-icon-pin-location-symbol-vector (1).jpg" alt="Ubicación" />
+              <span>Ubicación</span>
+            </a>
+
+            <a class="social__item" href="mailto:museo@ferrari.com">
+              <img src="732026.png" alt="Correo" />
+              <span>Contacto</span>
+            </a>
+          </div>
+
+          <div class="note" style="margin-top:12px;">
+            <p class="muted" style="margin:0;">
+              Maqueta educativa inspirada (sin copiar la web oficial).
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__grid">
+        <ul class="footer__links">
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+
+        <p class="footer__copy">&copy; 2025. Demo educativa. Todos los derechos reservados.</p>
+
+        <a class="backtop" href="#Inicio">Volver al Inicio ↑</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

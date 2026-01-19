@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ferrari | Racing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header id="Inicio" class="header">
+    <nav class="nav container">
+      <a class="brand" href="Practica.html" aria-label="Inicio">
+        <img src="Ferrari-Logo.svg.png" alt="Logo" />
+      </a>
+
+      <!-- Toggle CSS-only -->
+      <input class="nav__check" type="checkbox" id="navcheck" />
+      <label class="nav__toggle" for="navcheck" aria-label="Abrir menú">☰</label>
+
+      <div class="nav__links">
+        <a href="Galeria.html">Sports Cars</a>
+        <a href="Racing.html">Racing</a>
+        <a href="#">Colecciones</a>
+        <a href="#">Experiencias</a>
+        <a href="#">Sobre nosotros</a>
+      </div>
+
+      <div class="nav__actions">
+        <a class="btn btn--ghost" href="#noticias">Noticias</a>
+        <a class="btn btn--primary" href="#boletin">Boletín</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero__img" src="250412_SFHP_F1_R04_BAHRAIN_AT-8235-2_30024627-5a7d-4351-9276-98620923db24.jpg" alt="Ferrari Formula 1 en pista" />
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content container">
+      <p class="kicker">Scuderia Ferrari</p>
+      <h1>Racing</h1>
+      <p class="lead">
+        Actualidad, historia y calendario: todo el mundo Racing en una sola vista.
+      </p>
+
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#noticias">Ver noticias</a>
+        <a class="btn btn--ghost" href="Race.html">Ir al calendario</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- NOTICIAS PRINCIPALES -->
+    <section class="section container" id="noticias">
+      <div class="section__head">
+        <h2>Últimas Noticias</h2>
+        <p>Actualidad del campeonato y del equipo Ferrari.</p>
+      </div>
+
+      <article class="news-hero">
+        <div class="news-hero__media">
+          <img src="Ferrari-488-GT3-EVO-2020.jpg" alt="Ferrari en carrera" />
+        </div>
+
+        <div class="news-hero__body">
+          <p class="meta">FIA Formula 1 · Temporada 2025</p>
+          <h3>Tough race for Ferrari at Fuji</h3>
+          <p class="muted">
+            Una carrera exigente. Ferrari mantiene el rumbo en el campeonato
+            con trabajo constante durante el fin de semana.
+          </p>
+          <a class="btn btn--primary" href="#">Leer más</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- DESTACADOS -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section__head section__head--dark">
+          <h2>Destacados</h2>
+          <p>Momentos clave y contenido especial del mundo Racing.</p>
+        </div>
+
+        <div class="news-grid">
+          <!-- Card 1 -->
+          <article class="news-card">
+            <p class="meta">Historia</p>
+            <h4>Tributo a las libreas de Lauda</h4>
+            <p class="muted">
+              Un homenaje al histórico 312 T y al título mundial de 1975.
+            </p>
+            <a class="link" href="Historia.html">Leer →</a>
+          </article>
+
+          <!-- Card 2 (ESTA LLEVA A RACE.HTML) -->
+          <a href="Race.html" class="news-card" style="text-decoration:none; color:inherit;">
+            <p class="meta">Carreras</p>
+            <h4>Próxima fecha del calendario</h4>
+            <p class="muted">
+              Análisis del circuito y expectativas para la próxima carrera.
+            </p>
+            <span class="link">Leer →</span>
+          </a>
+
+          <!-- Card 3 -->
+          <article class="news-card">
+            <p class="meta">Equipo</p>
+            <h4>Preparación del SF-25</h4>
+            <p class="muted">
+              Desarrollo técnico y trabajo en pista del monoplaza.
+            </p>
+            <a class="link" href="SF-25.html">Leer →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__grid">
+        <ul class="footer__links">
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+
+        <p class="footer__copy">
+          &copy; 2025. Proyecto académico. Demo educativa.
+        </p>
+
+        <a class="backtop" href="#Inicio">Volver arriba ↑</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

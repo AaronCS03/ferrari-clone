@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ferrari República Dominicana | Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="nav container">
+
+      <a class="brand" href="#Inicio" aria-label="Inicio">
+        <img src="Ferrari-Logo.svg.png" alt="Logo" />
+      </a>
+
+      <input class="nav__check" type="checkbox" id="navcheck" />
+      <label class="nav__toggle" for="navcheck" aria-label="Abrir menú">☰</label>
+
+      <div class="nav__links">
+        <a href="#Home">Principal</a>
+        <a href="#racing">Racing</a>
+        <a href="#sportcars">Sport Cars</a>
+      </div>
+
+      <div class="nav__actions">
+        <a class="btn btn--ghost" href="#news">News</a>
+        <a class="btn btn--primary" href="#boletin">Boletín</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" aria-label="Portada" id="Inicio">
+      <img class="hero__img" src="2025_Japan_GP_-_Ferrari_-_Lewis_Hamilton_-_FP1.jpg" alt="Hero Ferrari" />
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content container">
+        <p class="kicker">Scuderia Update</p>
+        <h1>Frustration In Singapore</h1>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#news">Leer más</a>
+          <a class="btn btn--ghost" href="#featured">Ver destacados</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="featured" class="section container">
+      <div class="section__head">
+        <h2>Destacados</h2>
+      </div>
+
+      <div class="grid-2">
+        <article class="card card--media">
+          <img src="ferrari-2025-01-67ea806b49c1d.jpg" alt="Destacado 1" />
+          <div class="card__body">
+            <span class="tag">Racing</span>
+            <h3>Inside the Weekend</h3>
+            <p>Un vistazo exclusivo al fin de semana de carrera: estrategia, ritmo y momentos clave, presentados con una narrativa clara y un llamado a profundizar.</p>
+            <a class="link" href="#">ACERCA DE ELLOS →</a>
+          </div>
+        </article>
+
+        <article class="card card--media">
+          <img src="LA06Zf_170_2.png" alt="Destacado 2" />
+          <div class="card__body">
+            <span class="tag">Sports Cars</span>
+            <h3>Performance & Design</h3>
+            <p>Ingeniería y estética en perfecto equilibrio, un bloque limpio para destacar modelos donde el rendimiento y el diseño hablan por sí solos.</p>
+            <a class="link" href="#">ACERCA DE ELLOS →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="news" class="section section--dark">
+      <div class="container">
+        <div class="section__head section__head--dark">
+          <h2>LATEST NEWS</h2>
+        </div>
+
+        <article class="news-hero">
+          <div class="news-hero__media">
+            <img src="662944e323e8a717771267.jpg" alt="Noticia principal" />
+          </div>
+          <div class="news-hero__body">
+            <p class="meta">04 OCT · SINGAPORE GP</p>
+            <h3>A VERY CLOSE QUALIFYING BRINGS LITTLE JOY</h3>
+            <br>
+            <p class="muted">
+              Una clasificación ajustada hasta el último segundo, donde el rendimiento estuvo presente, pero el resultado dejó sensaciones encontradas. Un análisis rápido con acceso directo al contenido completo.
+            </p>
+            <br>
+            <a class="btn btn--primary" href="#noticias">Leer artículo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="hero" aria-label="Hero Noticias" id="Home">
+      <img class="hero__img" src="2U2A9809.jpg" alt="Ferrari - Noticias" />
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content container">
+        <p class="kicker">Arranca el motor</p>
+        <h1>Noticias y novedades</h1>
+        <p class="lead">
+          Actualizaciones de carrera, historia y momentos destacados.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#noticias">Ver noticias</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="noticias" class="section container">
+      <div class="section__head">
+        <h2>Últimas publicaciones</h2>
+      </div>
+
+      <article class="news-hero">
+        <div class="news-hero__media">
+          <img src="FwkFY0DWAAApsgP-753x494.jpg" alt="Tough race for Ferrari at Fuji" />
+        </div>
+
+        <div class="news-hero__body">
+          <p class="meta">Fuji · 28 September 2025</p>
+          <h3>Tough race for Ferrari at Fuji</h3>
+          <p class="muted">
+            Las 6 Horas de Fuji concluyeron con los Ferrari 499P oficiales de AF Corse en las posiciones 11 y 15 de la clasificación general. A pesar del resultado, Ferrari se mantiene como líder del Campeonato Mundial de Constructores.
+          </p>
+          <a class="btn btn--primary" href="#racing">Ver Racing</a>
+        </div>
+      </article>
+
+      <div class="news-grid" style="margin-top:14px;">
+        <article class="news-card">
+          <p class="meta">Historia · Special</p>
+          <h4>Tributo a las libreas de Lauda</h4>
+          <p class="muted">
+            Este año se cumple medio siglo desde que Niki Lauda ganó el título mundial de 1975 con Ferrari...
+          </p>
+          <a class="link" href="#">Leer →</a>
+        </article>
+
+        <article class="card card--media">
+          <img src="6470285a40c6810026987044.jpeg" alt="Tributo Lauda" />
+          <div class="card__body">
+            <span class="tag">Special</span>
+            <h3>312 T · 1975</h3>
+            <p>Un homenaje visual con enfoque editorial.</p>
+            <a class="btn btn--primary" href="#sobrenosotros">Leer más</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <p class="meta">Racing · WEC</p>
+          <h4>Resumen y contexto</h4>
+          <p class="muted">
+            Bloque de apoyo para añadir futuras noticias sin romper el layout.
+          </p>
+          <a class="link" href="#racing">Leer →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="racing" class="hero" aria-label="Hero Racing">
+      <img class="hero__img" src="250412_SFHP_F1_R04_BAHRAIN_AT-8235-2_30024627-5a7d-4351-9276-98620923db24.jpg" alt="Ferrari Formula 1 en pista" />
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content container">
+        <p class="kicker">Scuderia Ferrari</p>
+        <h1>Racing</h1>
+        <p class="lead">
+          Actualidad, historia y calendario: todo el mundo Racing en una sola vista.
+        </p>
+
+        <div class="hero__cta">
+
+          <a class="btn btn--ghost" href="Home.html">Ir al calendario</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="noticias-racing">
+      <div class="section__head">
+        <h2>Últimas Noticias</h2>
+      </div>
+
+      <article class="news-hero">
+        <div class="news-hero__media">
+          <img src="Ferrari-488-GT3-EVO-2020.jpg" alt="Ferrari en carrera" />
+        </div>
+
+        <div class="news-hero__body">
+          <p class="meta">FIA Formula 1 · Temporada 2025</p>
+          <h3>Tough race for Ferrari at Fuji</h3>
+          <p class="muted">
+            Una carrera exigente. Ferrari mantiene el rumbo en el campeonato
+            con trabajo constante durante el fin de semana.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section section--dark" aria-label="Destacados Racing">
+      <div class="container">
+        <div class="section__head section__head--dark">
+          <h2>Destacados</h2>
+        </div>
+
+        <div class="news-grid">
+          <article class="news-card">
+            <p class="meta">Historia</p>
+            <h4>Tributo a las libreas de Lauda</h4>
+            <p class="muted">
+              Un homenaje al histórico 312 T y al título mundial de 1975.
+            </p>
+
+            <a class="link" href="Historia.html">Leer →</a>
+          </article>
+
+          <a href="Historia.html" class="news-card" style="text-decoration:none; color:inherit;">
+            <p class="meta">Carreras</p>
+            <h4>Próxima fecha del calendario</h4>
+            <p class="muted">
+              Análisis del circuito y expectativas para la próxima carrera.
+            </p>
+            <span class="link">Leer →</span>
+          </a>
+
+          <article class="news-card">
+            <p class="meta">Equipo</p>
+            <h4>Preparación del SF-25</h4>
+            <p class="muted">
+              Desarrollo técnico y trabajo en pista del monoplaza.
+            </p>
+            <a class="link" href="Historia.html">Leer →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sportcars" class="section container">
+      <div class="section__head">
+        <div>
+          <h1 style="margin:0; font-size: clamp(30px, 4vw, 44px);">Sports Cars</h1>
+          <p class="muted" style="margin-top:4px;">Todos los modelos</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="modelos" class="section container">
+      <div class="section__head">
+        <h2>Gama</h2>
+      </div>
+
+      <div class="news-grid">
+        <article class="card card--media">
+          <img src="prueba-ferrari-296-gtb.jpg" alt="296 GTB" />
+          <div class="card__body">
+            <span class="tag">Gama</span>
+            <h3>296 GTB</h3>
+            <p>Modelo deportivo con enfoque en rendimiento y diseño.</p>
+            <br>
+            <a class="btn btn--primary" href="#">Recibir novedades</a>
+          </div>
+        </article>
+
+        <article class="card card--media">
+          <img src="1170-BH4A0105.jpg" alt="Ferrari 488 Pista"  />
+          <div class="card__body">
+            <span class="tag">Gama</span>
+            <h3>Ferrari 488 Pista</h3>
+            <p>Inspiración clásica con presencia y potencia.</p>
+            <br>
+            <a class="btn btn--primary" href="#">Recibir novedades</a>
+          </div>
+        </article>
+
+        <article class="card card--media">
+          <img src="rear45_before.png" alt="Ferrari SF90" />
+          <div class="card__body">
+            <span class="tag">Gama</span>
+            <h3>Ferrari SF-90</h3>
+            <p>potencia híbrida, tecnología de Fórmula 1 y diseño que convierte la velocidad en arte.</p>
+            <br>
+            <a class="btn btn--primary" href="#">Recibir novedades</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="section section--dark" aria-label="Serie Especial">
+      <div class="container">
+        <div class="section__head section__head--dark">
+          <h2>Serie Especial</h2>
+        </div>
+
+        <div class="grid-2">
+          <article class="card card--media">
+            <img src="ferrari-812-competizione-2339-1.jpg" alt="812 Competizione" />
+            <div class="card__body">
+              <span class="tag">Serie Especial</span>
+              <h3>812 Competizione</h3>
+              <p>Versión especial con carácter competitivo.</p>
+              <br>
+              <a class="btn btn--primary" href="Ferrari 812 Competizione.docx">Leer más</a>
+            </div>
+          </article>
+
+          <article class="card card--media">
+            <img src="Ferrari_812_Competizione_02.jpg" alt="812 Competizione A" />
+            <div class="card__body">
+              <span class="tag">Serie Especial</span>
+              <h3>812 Competizione A</h3>
+              <p>Variante con estética distinta y enfoque de colección.</p>
+              <br>
+              <a class="btn btn--primary" href="Ferrari 812 Competizione.docx">Leer más</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="boletin" class="section container">
+      <div class="split">
+        <div class="panel">
+          <h2>Boletín informativo</h2>
+          <p class="muted">
+            Suscríbete para recibir novedades (formulario de demostración).
+          </p>
+
+          <form class="form" action="#" method="post">
+            <div class="form__row">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" />
+            </div>
+
+            <div class="form__row">
+              <label for="email">Correo</label>
+              <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required />
+            </div>
+
+            <div class="form__row">
+              <label for="interes">Interés</label>
+              <select id="interes" name="interes">
+                <option value="racing">Racing</option>
+                <option value="sports">Sports Cars</option>
+                <option value="experiences">Experiencias</option>
+              </select>
+            </div>
+
+            <button class="btn btn--primary" type="submit">Suscribirme</button>
+          </form>
+        </div>
+
+        <br>
+        <br>
+
+        <aside class="panel panel--soft">
+          <h3>Enlaces</h3>
+          <div class="social">
+            <a class="social__item" href="https://www.instagram.com/ferrari/" target="_blank" rel="noopener">
+              <img src="insta-logo.png" alt="Instagram" />
+              <span>Instagram</span>
+            </a>
+
+            <a class="social__item" href="https://maps.app.goo.gl/8AtY93BK2XkoriWk7" target="_blank" rel="noopener">
+              <img src="gps-icon-logo-design-map-pointer-icon-pin-location-symbol-vector (1).jpg" alt="Ubicación" />
+              <span>Ubicación</span>
+            </a>
+
+            <a class="social__item" href="mailto:museo@ferrari.com">
+              <img src="732026.png" alt="Correo" />
+              <span>Contacto</span>
+            </a>
+          </div>
+
+          <div class="note">
+            
+          </div>
+        </aside>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <ul class="footer__links">
+          <li><a href="#sobrenosotros">Legal</a></li>
+          <li><a href="#sobrenosotros">Privacidad</a></li>
+          <li><a href="#sobrenosotros">Cookie Policy</a></li>
+          <li><a href="#boletin">Contacto</a></li>
+        </ul>
+
+        <p class="footer__copy">&copy; 2025. Demo educativa. Todos los derechos reservados.</p>
+
+        <a class="backtop" href="#Inicio">Volver al Inicio ↑</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
