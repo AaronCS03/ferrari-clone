@@ -13,25 +13,19 @@
   --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
 }
 
-/* =========================
-   BASE / BOX MODEL
-   ========================= */
-
-/* border-box (requisito) */
 *{ box-sizing:border-box; }
 
 html{
-  scroll-behavior:smooth; /* responsive UX */
+  scroll-behavior:smooth; 
 }
 
 body{
   margin:0;
-  font-family:var(--font);              /* formato del texto */
+  font-family:var(--font); 
   background:linear-gradient(180deg, #07080b, #0b0c10 40%, #07080b);
   color:var(--text);
 }
 
-/* Helpers */
 .container{
   width: min(var(--max), calc(100% - 40px));
   margin: 0 auto;
@@ -39,7 +33,7 @@ body{
 .section{ padding: 56px 0; }
 
 .section__head{
-  display:flex;                         /* display + flexbox */
+  display:flex;   
   align-items:flex-end;
   justify-content:space-between;
   gap:18px;
@@ -65,20 +59,16 @@ body{
 }
 .section__head--dark p{ color:rgba(246,247,251,.70); }
 
-/* =========================
-   NAV / HEADER (POSITIONING + Z-INDEX)
-   ========================= */
-
 .header{
-  position: sticky;                     /* posicionamiento */
+  position: sticky;   
   top:0;
-  z-index:20;                           /* z-index */
+  z-index:20;           
   backdrop-filter: blur(10px);
   background: rgba(7,8,11,.62);
   border-bottom:1px solid var(--line);
 }
 .nav{
-  display:flex;                         /* flexbox */
+  display:flex;  
   align-items:center;
   justify-content:space-between;
   gap:16px;
@@ -114,7 +104,6 @@ body{
   gap:10px;
 }
 
-/* CSS-only burger */
 .nav__check{ display:none; }
 .nav__toggle{
   display:none;
@@ -130,12 +119,8 @@ body{
   cursor:pointer;
 }
 
-/* =========================
-   BUTTONS / LINKS
-   ========================= */
-
 .btn{
-  display:inline-flex;                  /* display */
+  display:inline-flex; 
   align-items:center;
   justify-content:center;
   gap:8px;
@@ -169,21 +154,17 @@ body{
 }
 .link:hover{ color:white; }
 
-/* =========================
-   HERO (POSITIONING LAYERS)
-   ========================= */
-
 .hero{
-  position:relative;                    /* posicionamiento */
+  position:relative;   
   min-height: 74vh;
-  display:grid;                         /* display */
+  display:grid;   
   place-items:center;
   overflow:hidden;
   border-bottom:1px solid var(--line);
 }
 
 .hero__img{
-  position:absolute;                    /* posicionamiento */
+  position:absolute; 
   inset:0;
   width:100%;
   height:100%;
@@ -193,7 +174,7 @@ body{
 }
 
 .hero__overlay{
-  position:absolute;                    /* posicionamiento */
+  position:absolute; 
   inset:0;
   background:
     linear-gradient(180deg, rgba(0,0,0,.65), rgba(0,0,0,.18) 45%, rgba(0,0,0,.72)),
@@ -215,7 +196,7 @@ body{
 }
 .hero h1{
   margin:0 0 10px;
-  font-size: clamp(34px, 5vw, 62px);  /* texto responsive */
+  font-size: clamp(34px, 5vw, 62px); 
   line-height:1.02;
   letter-spacing: .4px;
 }
@@ -231,10 +212,6 @@ body{
   gap:10px;
   flex-wrap:wrap;
 }
-
-/* =========================
-   PANELS / CARDS (BOX MODEL)
-   ========================= */
 
 .panel{
   background: rgba(255,255,255,.03);
@@ -292,10 +269,6 @@ body{
   font-size:12px;
 }
 
-/* =========================
-   NEWS LAYOUT
-   ========================= */
-
 .news-hero{
   display:grid;
   grid-template-columns: 1.25fr .75fr;
@@ -340,13 +313,13 @@ body{
 }
 
 .news-card{
-  display:block;                        /* display */
+  display:block;         
   background: rgba(255,255,255,.03);
   border:1px solid var(--line);
   border-radius: var(--radius);
   padding: 14px;
   box-shadow: var(--shadow);
-  text-decoration:none;                 /* para cards clickeables con <a> */
+  text-decoration:none;       
   color: inherit;
 }
 .news-card:hover{
@@ -354,10 +327,6 @@ body{
 }
 .news-card h4{ margin:8px 0 8px; }
 .news-card p{ margin:0; }
-
-/* =========================
-   FORMS / SOCIAL
-   ========================= */
 
 .form{
   display:grid;
@@ -413,17 +382,13 @@ input:focus, select:focus{
   object-fit:cover;
 }
 
-/* =========================
-   FOOTER
-   ========================= */
-
 .footer{
   border-top:1px solid var(--line);
   padding: 26px 0;
   background: rgba(7,8,11,.82);
 }
 .footer__grid{
-  display:flex;                         /* flexbox */
+  display:flex;                       
   flex-wrap:wrap;
   gap:12px;
   align-items:center;
@@ -455,10 +420,6 @@ input:focus, select:focus{
 }
 .backtop:hover{ background: rgba(255,255,255,.07); }
 
-/* =========================
-   RESPONSIVE (REQUIREMENT)
-   ========================= */
-
 @media (max-width: 980px){
   .nav__toggle{ display:inline-flex; }
   .nav__links{
@@ -478,7 +439,6 @@ input:focus, select:focus{
   .nav__links a{ border-radius: 14px; }
   .nav__actions{ display:none; }
 
-  /* When checked show menu */
   .nav__check:checked ~ .nav__links{ display:flex; }
 
   .grid-2{ grid-template-columns:1fr; }
@@ -488,13 +448,6 @@ input:focus, select:focus{
   .hero{ min-height: 66vh; }
 }
 
-/* ==================================================
-   ✅ EXTRAS PARA LA EVALUACIÓN (SIN ROMPER TU DISEÑO)
-   - box-sizing: content-box
-   - float y clear
-   ================================================== */
-
-/* box-sizing: content-box (requisito) */
 .demo-content-box{
   box-sizing: content-box;
   width: 220px;
@@ -504,7 +457,6 @@ input:focus, select:focus{
   background: rgba(255,255,255,.02);
 }
 
-/* float y clear (requisito) */
 .float-left{
   float: left;
   width: 240px;
@@ -517,12 +469,6 @@ input:focus, select:focus{
   clear: both;
 }
 
-/* =========================================
-   MEDIA QUERIES POR DISPOSITIVO
-   Requisito académico explícito
-   ========================================= */
-
-/* 💻 LAPTOP / DESKTOP (pantallas medianas y grandes) */
 @media screen and (min-width: 1024px) {
 
   body{
@@ -550,7 +496,6 @@ input:focus, select:focus{
   }
 }
 
-/* 📱 MÓVIL (pantallas pequeñas) */
 @media screen and (max-width: 768px) {
 
   body{
@@ -592,6 +537,117 @@ input:focus, select:focus{
   }
 }
 
+/* =========================
+   SERVICIO · RACING (texto debajo de imagen)
+   ========================= */
+
+.service-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap:14px;
+}
+
+.service-card{
+  display:flex;
+  flex-direction:column;      /* clave */
+  border-radius: var(--radius);
+  overflow:hidden;
+  border:1px solid var(--line);
+  background: rgba(255,255,255,.03);
+  box-shadow: var(--shadow);
+}
+
+.service-card img{
+  width:100%;
+  height: 220px;
+  object-fit:cover;           /* ajusta la imagen */
+  display:block;
+}
+
+.service-body{
+  padding:14px;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.service-body h3{
+  margin:0;
+}
+
+.service-body .muted{
+  margin:0;
+  line-height:1.45;
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .service-grid{
+    grid-template-columns:1fr;
+  }
+  .service-card img{
+    height:200px;
+  }
+}
+
+
+.service-body h3{ margin:0; }
+.service-body .muted{ margin:0; }
+
+@media (max-width: 980px){
+  .service-grid{ grid-template-columns: 1fr; }
+  .service-card, .service-body{ min-height: 280px; }
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns: 1.3fr .7fr;
+  gap:14px;
+  align-items:start;
+}
+
+.map-card{
+  position:relative;  
+  border-radius: var(--radius);
+  overflow:hidden;
+  border:1px solid var(--line);
+  box-shadow: var(--shadow);
+  background: rgba(255,255,255,.03);
+}
+
+.map-head{
+  padding: 14px 14px 10px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(0,0,0,.15);
+}
+
+.map-embed{
+  width:100%;
+  height: 360px;
+  border:0;
+  display:block;
+}
+
+.map-badge{
+  position:absolute; 
+  left:12px;
+  bottom:12px;
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  z-index:2;   
+}
+
+.Imagenes2 {
+  width: 1000px;
+  position: relative;
+  left: 250px;
+}
+
+@media (max-width: 980px){
+  .contact-grid{ grid-template-columns: 1fr; }
+  .map-embed{ height: 300px; }
+}
 
 section, header { scroll-margin-top: 90px; }
 
