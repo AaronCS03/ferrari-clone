@@ -537,10 +537,6 @@ input:focus, select:focus{
   }
 }
 
-/* =========================
-   SERVICIO · RACING (texto debajo de imagen)
-   ========================= */
-
 .service-grid{
   display:grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -549,7 +545,7 @@ input:focus, select:focus{
 
 .service-card{
   display:flex;
-  flex-direction:column;      /* clave */
+  flex-direction:column;
   border-radius: var(--radius);
   overflow:hidden;
   border:1px solid var(--line);
@@ -560,7 +556,7 @@ input:focus, select:focus{
 .service-card img{
   width:100%;
   height: 220px;
-  object-fit:cover;           /* ajusta la imagen */
+  object-fit:cover;
   display:block;
 }
 
@@ -580,7 +576,6 @@ input:focus, select:focus{
   line-height:1.45;
 }
 
-/* Responsive */
 @media (max-width: 980px){
   .service-grid{
     grid-template-columns:1fr;
